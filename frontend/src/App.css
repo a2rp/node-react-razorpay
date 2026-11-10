@@ -1,0 +1,87 @@
+.App {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #f3f7ff 0%, #f9fbff 55%, #eef5ff 100%);
+}
+
+.product-card {
+  width: min(100%, 420px);
+  padding: 36px;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(27, 55, 100, 0.12);
+  text-align: left;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #315fba;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.product-card h1 {
+  margin: 0;
+  color: #17233b;
+  font-size: clamp(1.7rem, 6vw, 2.2rem);
+}
+
+.price {
+  margin: 20px 0 8px;
+  color: #17233b;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.description {
+  margin: 0 0 24px;
+  color: #5e6b82;
+  line-height: 1.6;
+}
+
+.product-card button {
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 10px;
+  background: #1769ff;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.product-card button:hover:not(:disabled) {
+  background: #0e55d5;
+  transform: translateY(-1px);
+}
+
+.product-card button:focus-visible {
+  outline: 3px solid #9fc0ff;
+  outline-offset: 3px;
+}
+
+.product-card button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.payment-message {
+  min-height: 1.5em;
+  margin: 18px 0 0;
+  color: #34445f;
+  line-height: 1.5;
+}
+
+.payment-reference {
+  margin: 6px 0 0;
+  overflow-wrap: anywhere;
+  color: #5e6b82;
+  font-size: 0.85rem;
+}

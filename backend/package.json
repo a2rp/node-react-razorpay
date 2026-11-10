@@ -1,20 +1,30 @@
 {
-  "name": "backend",
+  "name": "node-react-razorpay-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express API for creating Razorpay orders and verifying captured payments.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js",
+    "dev": "node --watch ./index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "razorpay",
+    "payments",
+    "express",
+    "nodejs",
+    "checkout",
+    "signature-verification"
+  ],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "path": "^0.12.7",
-    "razorpay": "^2.8.1",
-    "shortid": "^2.2.16"
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.4",
+    "razorpay": "^2.9.8"
   }
 }
